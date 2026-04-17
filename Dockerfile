@@ -19,3 +19,4 @@ ENTRYPOINT ["uv", "run", ".", "--host", "0.0.0.0", "--port", "8080"]
 # docker pull tinumistry/my-fastapi-app:1.0
 # docker tag tinumistry/my-fastapi-app:1.0 us-central1-docker.pkg.dev/agentverse-summoner-xl71u6zdlk/docker002/my-fastapi-app:latest
 # docker push us-central1-docker.pkg.dev/agentverse-summoner-xl71u6zdlk/docker002/my-fastapi-app:latest
+# docker
