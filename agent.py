@@ -6,11 +6,11 @@ from google.adk.models.lite_llm import LiteLlm
 
 def create_calendar_event(event_details: dict) -> dict:
     """Create a calendar event with the provided details.
-    
+
     Args:
         event_details: A dictionary containing event information such as
                        title, date, time, and attendees.
-    
+
     Returns:
         A dictionary with status and confirmation message.
     """
