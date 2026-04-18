@@ -1,0 +1,74 @@
+Basic Scheduling
+
+Schedule a doctor's appointment today at 7 PM for Pritesh
+Book a meeting tomorrow at 10 AM
+Create an event called Team Standup on Monday at 9 AM
+
+With Missing Details (tests defaults)
+
+Schedule a meeting tomorrow (no time → defaults to 12:00 PM)
+Create an event called Lunch (no date → defaults to today)
+Book something for next Friday (no title → defaults to Untitled Event)
+
+Natural Language
+
+I have a dentist appointment this evening at 6:30 PM, my name is Rahul
+Set up a client call next Monday morning
+Remind me about my interview on Saturday at 11 AM
+
+Relative Date/Time
+
+Schedule a gym session tonight at 6 PM
+Add a birthday party this Sunday at 5 PM for Amit
+Create a project review meeting next week Thursday at 3 PM
+
+Minimal Input (stress test)
+
+Meeting tomorrow
+Doctor today
+Call at 4 PM
+
+These cover most edge cases — relative dates, missing fields, natural language titles, and minimal input — so you can verify the agent handles defaults correctly and never asks unnecessary follow-up questions.Sonnet 4.6
+
+-------------------------
+ Book Search — By Title
+
+Do you have the book The Silicon Gold?
+Is The Last Algorithm available?
+Search for the book Beneath the Neon Sky
+
+📚 Book Search — By Author
+
+Show me books by Pritesh Mistry
+Any books by Sophia Marlowe?
+What books does Rivan Desai have?
+
+📚 Book Search — By Genre
+
+Show me all sci-fi books
+Any fantasy books in the library?
+Do you have any cyberpunk books?
+
+📚 Book Search — Availability
+
+Which books are currently available?
+Show me only available books
+Is Echoes in the Dark Valley available?
+
+📅 Calendar — Basic Scheduling
+
+Schedule a doctor's appointment today at 7 PM for Pritesh
+Book a meeting tomorrow at 10 AM
+Create a team standup on Monday at 9 AM
+
+📅 Calendar — Defaults Testing
+
+Schedule a meeting tomorrow (no time → 12:00 PM)
+Create an event called Lunch (no date → today)
+Book something for next Friday (no title → Untitled Event)
+
+🔀 Mixed Queries (both tools)
+
+Is The Silicon Gold available? Also schedule a reading session tonight at 8 PM
+Search for tech thriller books and book a library visit tomorrow at 11 AM
+Show books by Pritesh Mistry and create a reminder for today at 6 PM
